@@ -1,0 +1,4 @@
+packages:
+  - package: dbt-labs/dbt_utils
+    version: 0.8.4
+  - git: "https://github.com/dbt-databricks/utils.git"
