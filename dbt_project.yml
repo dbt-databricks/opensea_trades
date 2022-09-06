@@ -34,7 +34,6 @@ models:
   opensea_trades:
     # Config indicated by + and applies to all files under models/example/
     erc20:
-      +schema: erc20
       +tags: ['sector']
       ethereum:
         +schema: erc20_ethereum
@@ -52,9 +51,7 @@ models:
         +schema: erc1155_ethereum
         +materialized: view
     opensea:
-      +schema: opensea
-      +materialized: view
+      +materialized: table
       +tags: ['project']
       ethereum:
-        +schema: opensea_ethereum
-        +materialized: view
+        +materialized: table

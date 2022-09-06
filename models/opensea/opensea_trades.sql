@@ -1,4 +1,4 @@
-{{config(alias='trades')}}
+{{config(alias='opensea_ethereum_trades')}}
 
 select
   blockchain,

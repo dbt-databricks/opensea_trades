@@ -71,6 +71,8 @@ select
     w.currency_contract,
     w.original_currency_contract,
     w.token_id,
-
+    tx.from_address as tx_from,
+    tx.to_address as tx_to
 from wyvern_data w
+
 left join tx on tx.hash = w.tx_hash
