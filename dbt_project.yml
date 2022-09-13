@@ -51,6 +51,22 @@ models:
         +schema: erc1155_ethereum
         +materialized: view
     opensea:
+      +on_schema_change: sync_all_columns
+      +materialized: table
+      +tags: ['project']
+      ethereum:
+        +materialized: table
+    nft:
+      +materialized: table
+      +tags: ['sector']
+      ethereum:
+        +materialized: table
+    ens:
+      +materialized: table
+      +tags: ['project']
+      ethereum:
+        +materialized: table
+    cryptopunks:
       +materialized: table
       +tags: ['project']
       ethereum:
