@@ -1,0 +1,5 @@
+version: 2
+
+models:
+  - name: nft_trades
+  - name: nft_mints

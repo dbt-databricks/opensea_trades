@@ -1,0 +1,5 @@
+version: 2
+
+models:
+  - name: nft_ethereum_mints
+  - name: nft_ethereum_transfers
