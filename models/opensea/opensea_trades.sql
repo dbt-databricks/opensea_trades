@@ -1,4 +1,11 @@
-{{config(alias='opensea_ethereum_trades')}}
+{{
+    config(
+        alias='opensea_trades',
+        materialized='incremental',
+        unique_key='tx_hash',
+        on_schema_change='fail'
+    )
+}}
 
 select
   blockchain,
